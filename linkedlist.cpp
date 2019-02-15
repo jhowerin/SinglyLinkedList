@@ -144,6 +144,9 @@ public:
         return;
       }
 
+      if(index > size)
+        return;
+
       for(int i=0;i<index;i++) {
         prev=cur;
         cur=cur->next;
